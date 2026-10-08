@@ -1,0 +1,1019 @@
+{
+	"id": "71a418c4-a730-413b-a4a0-08c4aaf47aed",
+	"name": "Urban Scooter - API Tests (Tarefa 3)",
+	"timestamp": "2026-09-28T13:28:06.811Z",
+	"collection_id": "49691594-add629c8-b6dd-4178-9568-d75929e3439e",
+	"folder_id": 0,
+	"environment_id": "49691594-01dccaaa-b66e-4980-b27a-b1c0a75c36c8",
+	"totalPass": 19,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2026-09-28T13:27:56.516Z",
+	"totalFail": 18,
+	"results": [
+		{
+			"id": "dd5c6632-78e1-4108-90db-4dfa38f73f69",
+			"name": "T3-01 | Criar entregador com dados válidos",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 706,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"T3-01: Status code é 201 Created": true,
+				"T3-01: Resposta contém ok: true": true
+			},
+			"testPassFailCounts": {
+				"T3-01: Status code é 201 Created": {
+					"pass": 1,
+					"fail": 0
+				},
+				"T3-01: Resposta contém ok: true": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				706
+			],
+			"allTests": [
+				{
+					"T3-01: Status code é 201 Created": true,
+					"T3-01: Resposta contém ok: true": true
+				}
+			]
+		},
+		{
+			"id": "a2b2b3f9-b9dc-4934-be7c-4650ba312bb8",
+			"name": "T3-02 | Criar entregador SEM o campo login",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 153,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"T3-02: Status code é 400 Bad Request": true,
+				"T3-02: Mensagem indica dados insuficientes": true
+			},
+			"testPassFailCounts": {
+				"T3-02: Status code é 400 Bad Request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"T3-02: Mensagem indica dados insuficientes": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				153
+			],
+			"allTests": [
+				{
+					"T3-02: Status code é 400 Bad Request": true,
+					"T3-02: Mensagem indica dados insuficientes": true
+				}
+			]
+		},
+		{
+			"id": "da304c4b-5d85-4a7d-b3a3-b162d9bdd97a",
+			"name": "T3-03 | Criar entregador SEM o campo password",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 150,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"T3-03: Status code é 400 Bad Request": true,
+				"T3-03: Mensagem indica dados insuficientes": true
+			},
+			"testPassFailCounts": {
+				"T3-03: Status code é 400 Bad Request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"T3-03: Mensagem indica dados insuficientes": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				150
+			],
+			"allTests": [
+				{
+					"T3-03: Status code é 400 Bad Request": true,
+					"T3-03: Mensagem indica dados insuficientes": true
+				}
+			]
+		},
+		{
+			"id": "b8bf1a59-6a84-4593-9a85-db6da24a1a42",
+			"name": "T3-04 | Criar entregador SEM o campo firstName (opcional)",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 151,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"T3-04: Status code é 201 Created (firstName é opcional)": true,
+				"T3-04: Resposta contém ok: true": true
+			},
+			"testPassFailCounts": {
+				"T3-04: Status code é 201 Created (firstName é opcional)": {
+					"pass": 1,
+					"fail": 0
+				},
+				"T3-04: Resposta contém ok: true": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				151
+			],
+			"allTests": [
+				{
+					"T3-04: Status code é 201 Created (firstName é opcional)": true,
+					"T3-04: Resposta contém ok: true": true
+				}
+			]
+		},
+		{
+			"id": "1a002c4d-1819-4587-b656-d30ffedd1171",
+			"name": "T3-05 | Criar entregador com corpo vazio",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 149,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"T3-05: Status code é 400 Bad Request": true,
+				"T3-05: Mensagem indica dados insuficientes": true
+			},
+			"testPassFailCounts": {
+				"T3-05: Status code é 400 Bad Request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"T3-05: Mensagem indica dados insuficientes": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				149
+			],
+			"allTests": [
+				{
+					"T3-05: Status code é 400 Bad Request": true,
+					"T3-05: Mensagem indica dados insuficientes": true
+				}
+			]
+		},
+		{
+			"id": "7d60c84d-90f3-4946-9084-7206c413215a",
+			"name": "T3-06 | ❌ Login com NÚMEROS (deveria rejeitar)",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 155,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"T3-06: Status code deveria ser 400 (login com números)": false
+			},
+			"testPassFailCounts": {
+				"T3-06: Status code deveria ser 400 (login com números)": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				155
+			],
+			"allTests": [
+				{
+					"T3-06: Status code deveria ser 400 (login com números)": false
+				}
+			]
+		},
+		{
+			"id": "470f44b7-3fc0-4ea3-bd3f-45b332addb0f",
+			"name": "T3-07 | ❌ Login com CARACTERES ESPECIAIS (deveria rejeitar)",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 151,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"T3-07: Status code deveria ser 400 (login com caracteres especiais)": false
+			},
+			"testPassFailCounts": {
+				"T3-07: Status code deveria ser 400 (login com caracteres especiais)": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				151
+			],
+			"allTests": [
+				{
+					"T3-07: Status code deveria ser 400 (login com caracteres especiais)": false
+				}
+			]
+		},
+		{
+			"id": "c0c9a7f6-3cc2-4b88-8615-101a9988f529",
+			"name": "T3-08 | ❌ Login com ACENTUAÇÃO (deveria rejeitar)",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 153,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"T3-08: Status code deveria ser 400 (login com acentuação)": false
+			},
+			"testPassFailCounts": {
+				"T3-08: Status code deveria ser 400 (login com acentuação)": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				153
+			],
+			"allTests": [
+				{
+					"T3-08: Status code deveria ser 400 (login com acentuação)": false
+				}
+			]
+		},
+		{
+			"id": "23806af1-45ed-4120-9b1b-4e326ba2eddc",
+			"name": "T3-09 | ❌ Login com ESPAÇO (deveria rejeitar)",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 159,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"T3-09: Status code deveria ser 400 (login com espaço)": false
+			},
+			"testPassFailCounts": {
+				"T3-09: Status code deveria ser 400 (login com espaço)": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				159
+			],
+			"allTests": [
+				{
+					"T3-09: Status code deveria ser 400 (login com espaço)": false
+				}
+			]
+		},
+		{
+			"id": "ab64a9c6-d6d6-45f5-84f9-998267aa0673",
+			"name": "T3-10 | ❌ Login com 1 caractere (abaixo do mínimo)",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 167,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"T3-10: Status code deveria ser 400 (login com 1 caractere)": false
+			},
+			"testPassFailCounts": {
+				"T3-10: Status code deveria ser 400 (login com 1 caractere)": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				167
+			],
+			"allTests": [
+				{
+					"T3-10: Status code deveria ser 400 (login com 1 caractere)": false
+				}
+			]
+		},
+		{
+			"id": "00639307-746e-4324-92a1-178cd52da39e",
+			"name": "T3-11 | Login com 2 caracteres (limite mínimo)",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 153,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"T3-11: Status code é 201 Created": true
+			},
+			"testPassFailCounts": {
+				"T3-11: Status code é 201 Created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				153
+			],
+			"allTests": [
+				{
+					"T3-11: Status code é 201 Created": true
+				}
+			]
+		},
+		{
+			"id": "d17152e1-a48f-4606-adf4-5584277b5dbc",
+			"name": "T3-12 | Login com 10 caracteres (limite máximo)",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 158,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"T3-12: Status code é 201 Created": true
+			},
+			"testPassFailCounts": {
+				"T3-12: Status code é 201 Created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				158
+			],
+			"allTests": [
+				{
+					"T3-12: Status code é 201 Created": true
+				}
+			]
+		},
+		{
+			"id": "511d5429-7c72-4631-bc3e-d42635bce928",
+			"name": "T3-13 | ❌ Login com 11 caracteres (acima do máximo)",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 311,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"T3-13: Status code deveria ser 400 (login com 11 caracteres)": false
+			},
+			"testPassFailCounts": {
+				"T3-13: Status code deveria ser 400 (login com 11 caracteres)": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				311
+			],
+			"allTests": [
+				{
+					"T3-13: Status code deveria ser 400 (login com 11 caracteres)": false
+				}
+			]
+		},
+		{
+			"id": "2898127e-2125-4769-92a2-a009691447fd",
+			"name": "T3-14 | Login duplicado (409 Conflict)",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 153,
+			"responseCode": {
+				"code": 409,
+				"name": "Conflict"
+			},
+			"tests": {
+				"T3-14: Status code é 409 Conflict (login duplicado)": true
+			},
+			"testPassFailCounts": {
+				"T3-14: Status code é 409 Conflict (login duplicado)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				153
+			],
+			"allTests": [
+				{
+					"T3-14: Status code é 409 Conflict (login duplicado)": true
+				}
+			]
+		},
+		{
+			"id": "ee54d0dd-9d10-4401-afdf-bc59a643eb41",
+			"name": "T3-15 | ❌ firstName com NÚMEROS (deveria rejeitar)",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 206,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"T3-15: Status code deveria ser 400 (firstName com números)": false
+			},
+			"testPassFailCounts": {
+				"T3-15: Status code deveria ser 400 (firstName com números)": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				206
+			],
+			"allTests": [
+				{
+					"T3-15: Status code deveria ser 400 (firstName com números)": false
+				}
+			]
+		},
+		{
+			"id": "1beb837a-c9b9-42bc-a01b-b08acd9b2e54",
+			"name": "T3-16 | ❌ firstName com CARACTERES ESPECIAIS (deveria rejeitar)",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 209,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"T3-16: Status code deveria ser 400 (firstName com caracteres especiais)": false
+			},
+			"testPassFailCounts": {
+				"T3-16: Status code deveria ser 400 (firstName com caracteres especiais)": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				209
+			],
+			"allTests": [
+				{
+					"T3-16: Status code deveria ser 400 (firstName com caracteres especiais)": false
+				}
+			]
+		},
+		{
+			"id": "ccc95bcb-2c9c-4ea4-a1ba-d3128df64002",
+			"name": "T3-17 | ❌ firstName com caracteres NÃO LATINOS (deveria rejeitar)",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 256,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"T3-17: Status code deveria ser 400 (firstName com caracteres cirílicos)": false
+			},
+			"testPassFailCounts": {
+				"T3-17: Status code deveria ser 400 (firstName com caracteres cirílicos)": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				256
+			],
+			"allTests": [
+				{
+					"T3-17: Status code deveria ser 400 (firstName com caracteres cirílicos)": false
+				}
+			]
+		},
+		{
+			"id": "d80624cc-a7a0-4257-b982-087d8c3892ea",
+			"name": "T3-18 | ❌ firstName com 1 caractere (abaixo do mínimo)",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 249,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"T3-18: Status code deveria ser 400 (firstName com 1 caractere)": false
+			},
+			"testPassFailCounts": {
+				"T3-18: Status code deveria ser 400 (firstName com 1 caractere)": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				249
+			],
+			"allTests": [
+				{
+					"T3-18: Status code deveria ser 400 (firstName com 1 caractere)": false
+				}
+			]
+		},
+		{
+			"id": "b5663a6f-7b38-4929-9fa2-cf61feac3960",
+			"name": "T3-19 | firstName com 2 caracteres (limite mínimo)",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 155,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"T3-19: Status code é 201 Created": true
+			},
+			"testPassFailCounts": {
+				"T3-19: Status code é 201 Created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				155
+			],
+			"allTests": [
+				{
+					"T3-19: Status code é 201 Created": true
+				}
+			]
+		},
+		{
+			"id": "ce631f5c-b422-4607-b616-fa835c059004",
+			"name": "T3-20 | firstName com 10 caracteres (limite máximo)",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 160,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"T3-20: Status code é 201 Created": true
+			},
+			"testPassFailCounts": {
+				"T3-20: Status code é 201 Created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				160
+			],
+			"allTests": [
+				{
+					"T3-20: Status code é 201 Created": true
+				}
+			]
+		},
+		{
+			"id": "733a109c-5758-4db0-a650-a7eea5cf3aff",
+			"name": "T3-21 | ❌ firstName com 11 caracteres (acima do máximo)",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 152,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"T3-21: Status code deveria ser 400 (firstName com 11 caracteres)": false
+			},
+			"testPassFailCounts": {
+				"T3-21: Status code deveria ser 400 (firstName com 11 caracteres)": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				152
+			],
+			"allTests": [
+				{
+					"T3-21: Status code deveria ser 400 (firstName com 11 caracteres)": false
+				}
+			]
+		},
+		{
+			"id": "bdf1ca46-f677-4a60-8a93-3bdb6bf02190",
+			"name": "T3-22 | ❌ Password com LETRAS (deveria rejeitar)",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 152,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"T3-22: Status code deveria ser 400 (password com letras)": false
+			},
+			"testPassFailCounts": {
+				"T3-22: Status code deveria ser 400 (password com letras)": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				152
+			],
+			"allTests": [
+				{
+					"T3-22: Status code deveria ser 400 (password com letras)": false
+				}
+			]
+		},
+		{
+			"id": "73dfac7a-7f77-46ca-b6c5-d7e1043fc4a3",
+			"name": "T3-23 | ❌ Password com CARACTERES ESPECIAIS (deveria rejeitar)",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 154,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"T3-23: Status code deveria ser 400 (password com caracteres especiais)": false
+			},
+			"testPassFailCounts": {
+				"T3-23: Status code deveria ser 400 (password com caracteres especiais)": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				154
+			],
+			"allTests": [
+				{
+					"T3-23: Status code deveria ser 400 (password com caracteres especiais)": false
+				}
+			]
+		},
+		{
+			"id": "d0e3caff-f4d1-4af9-a03d-b4169eb303e3",
+			"name": "T3-24 | ❌ Password com 3 dígitos (abaixo do exigido)",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 160,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"T3-24: Status code deveria ser 400 (password com 3 dígitos)": false
+			},
+			"testPassFailCounts": {
+				"T3-24: Status code deveria ser 400 (password com 3 dígitos)": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				160
+			],
+			"allTests": [
+				{
+					"T3-24: Status code deveria ser 400 (password com 3 dígitos)": false
+				}
+			]
+		},
+		{
+			"id": "8495a6df-2134-41a5-ae72-e8ffe0a28d62",
+			"name": "T3-25 | Password com 4 dígitos (válida)",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 161,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"T3-25: Status code é 201 Created": true
+			},
+			"testPassFailCounts": {
+				"T3-25: Status code é 201 Created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				161
+			],
+			"allTests": [
+				{
+					"T3-25: Status code é 201 Created": true
+				}
+			]
+		},
+		{
+			"id": "18504c75-23b1-405b-8797-f52709e61805",
+			"name": "T3-26 | ❌ Password com 5 dígitos (acima do exigido)",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 152,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"T3-26: Status code deveria ser 400 (password com 5 dígitos)": false
+			},
+			"testPassFailCounts": {
+				"T3-26: Status code deveria ser 400 (password com 5 dígitos)": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				152
+			],
+			"allTests": [
+				{
+					"T3-26: Status code deveria ser 400 (password com 5 dígitos)": false
+				}
+			]
+		},
+		{
+			"id": "44007d79-ec44-441c-8148-485631ee30de",
+			"name": "T3-28 | Excluir entregador existente",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier",
+			"time": 249,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"T3-28: Status code é 200 OK (entregador excluído)": false
+			},
+			"testPassFailCounts": {
+				"T3-28: Status code é 200 OK (entregador excluído)": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				249
+			],
+			"allTests": [
+				{
+					"T3-28: Status code é 200 OK (entregador excluído)": false
+				}
+			]
+		},
+		{
+			"id": "e4275cc7-2644-41b3-aa9d-09a333c37721",
+			"name": "T3-30 | Excluir entregador com ID inexistente",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier/99999",
+			"time": 248,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"T3-30: Status code é 404 Not Found": true
+			},
+			"testPassFailCounts": {
+				"T3-30: Status code é 404 Not Found": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				248
+			],
+			"allTests": [
+				{
+					"T3-30: Status code é 404 Not Found": true
+				}
+			]
+		},
+		{
+			"id": "973030b5-7386-4ac5-929d-0b71fa431330",
+			"name": "T3-31 | ❌ Excluir com ID inválido (deveria ser 400, retorna 500)",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier/abc",
+			"time": 176,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"T3-31: Status code deveria ser 400 Bad Request (não 500)": false,
+				"T3-31: NÃO deveria retornar 500 Internal Server Error": false
+			},
+			"testPassFailCounts": {
+				"T3-31: Status code deveria ser 400 Bad Request (não 500)": {
+					"pass": 0,
+					"fail": 1
+				},
+				"T3-31: NÃO deveria retornar 500 Internal Server Error": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"T3-31: Status code deveria ser 400 Bad Request (não 500)": false,
+					"T3-31: NÃO deveria retornar 500 Internal Server Error": false
+				}
+			]
+		},
+		{
+			"id": "b500e322-ebd3-4bde-925a-7d07fb11448a",
+			"name": "T3-32 | Excluir novamente entregador já excluído",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier/99999",
+			"time": 276,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"T3-32: Status code é 404 Not Found (já excluído)": true
+			},
+			"testPassFailCounts": {
+				"T3-32: Status code é 404 Not Found (já excluído)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				276
+			],
+			"allTests": [
+				{
+					"T3-32: Status code é 404 Not Found (já excluído)": true
+				}
+			]
+		},
+		{
+			"id": "0587419b-4344-44d8-8718-16e5c75f4103",
+			"name": "T3-33 | Login após exclusão do entregador",
+			"url": "https://cnt-cbc54404-c339-4594-b594-6876256d85ea.containerhub.tripleten-services.com/api/v1/courier/login",
+			"time": 238,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"T3-33: Login deve falhar após exclusão (404)": true
+			},
+			"testPassFailCounts": {
+				"T3-33: Login deve falhar após exclusão (404)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				238
+			],
+			"allTests": [
+				{
+					"T3-33: Login deve falhar após exclusão (404)": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 6222,
+	"collection": {
+		"requests": [
+			{
+				"id": "dd5c6632-78e1-4108-90db-4dfa38f73f69",
+				"method": "POST"
+			},
+			{
+				"id": "a2b2b3f9-b9dc-4934-be7c-4650ba312bb8",
+				"method": "POST"
+			},
+			{
+				"id": "da304c4b-5d85-4a7d-b3a3-b162d9bdd97a",
+				"method": "POST"
+			},
+			{
+				"id": "b8bf1a59-6a84-4593-9a85-db6da24a1a42",
+				"method": "POST"
+			},
+			{
+				"id": "1a002c4d-1819-4587-b656-d30ffedd1171",
+				"method": "POST"
+			},
+			{
+				"id": "7d60c84d-90f3-4946-9084-7206c413215a",
+				"method": "POST"
+			},
+			{
+				"id": "470f44b7-3fc0-4ea3-bd3f-45b332addb0f",
+				"method": "POST"
+			},
+			{
+				"id": "c0c9a7f6-3cc2-4b88-8615-101a9988f529",
+				"method": "POST"
+			},
+			{
+				"id": "23806af1-45ed-4120-9b1b-4e326ba2eddc",
+				"method": "POST"
+			},
+			{
+				"id": "ab64a9c6-d6d6-45f5-84f9-998267aa0673",
+				"method": "POST"
+			},
+			{
+				"id": "00639307-746e-4324-92a1-178cd52da39e",
+				"method": "POST"
+			},
+			{
+				"id": "d17152e1-a48f-4606-adf4-5584277b5dbc",
+				"method": "POST"
+			},
+			{
+				"id": "511d5429-7c72-4631-bc3e-d42635bce928",
+				"method": "POST"
+			},
+			{
+				"id": "2898127e-2125-4769-92a2-a009691447fd",
+				"method": "POST"
+			},
+			{
+				"id": "ee54d0dd-9d10-4401-afdf-bc59a643eb41",
+				"method": "POST"
+			},
+			{
+				"id": "1beb837a-c9b9-42bc-a01b-b08acd9b2e54",
+				"method": "POST"
+			},
+			{
+				"id": "ccc95bcb-2c9c-4ea4-a1ba-d3128df64002",
+				"method": "POST"
+			},
+			{
+				"id": "d80624cc-a7a0-4257-b982-087d8c3892ea",
+				"method": "POST"
+			},
+			{
+				"id": "b5663a6f-7b38-4929-9fa2-cf61feac3960",
+				"method": "POST"
+			},
+			{
+				"id": "ce631f5c-b422-4607-b616-fa835c059004",
+				"method": "POST"
+			},
+			{
+				"id": "733a109c-5758-4db0-a650-a7eea5cf3aff",
+				"method": "POST"
+			},
+			{
+				"id": "bdf1ca46-f677-4a60-8a93-3bdb6bf02190",
+				"method": "POST"
+			},
+			{
+				"id": "73dfac7a-7f77-46ca-b6c5-d7e1043fc4a3",
+				"method": "POST"
+			},
+			{
+				"id": "d0e3caff-f4d1-4af9-a03d-b4169eb303e3",
+				"method": "POST"
+			},
+			{
+				"id": "8495a6df-2134-41a5-ae72-e8ffe0a28d62",
+				"method": "POST"
+			},
+			{
+				"id": "18504c75-23b1-405b-8797-f52709e61805",
+				"method": "POST"
+			},
+			{
+				"id": "44007d79-ec44-441c-8148-485631ee30de",
+				"method": "DELETE"
+			},
+			{
+				"id": "e4275cc7-2644-41b3-aa9d-09a333c37721",
+				"method": "DELETE"
+			},
+			{
+				"id": "973030b5-7386-4ac5-929d-0b71fa431330",
+				"method": "DELETE"
+			},
+			{
+				"id": "b500e322-ebd3-4bde-925a-7d07fb11448a",
+				"method": "DELETE"
+			},
+			{
+				"id": "0587419b-4344-44d8-8718-16e5c75f4103",
+				"method": "POST"
+			}
+		]
+	}
+}
